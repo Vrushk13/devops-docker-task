@@ -1,0 +1,10 @@
+services:
+
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+
+  backend:
+    image: python:3.11
+    command: python -m http.server 5000
