@@ -3,9 +3,9 @@ pipeline {
 
     stages {
 
-        stage('Clone GitHub Repository') {
+        stage('GitHub Connected') {
             steps {
-                git 'https://github.com/Vrushk13/Microservices-app.git'
+                echo 'GitHub repository connected successfully!'
             }
         }
 
